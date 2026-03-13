@@ -1,0 +1,14 @@
+{
+  "categories": [
+    { "name": "Гардеробные", "pricePerMeter": 29000 },
+    { "name": "Прихожие", "pricePerMeter": 55000 },
+    { "name": "Распашные шкафы", "pricePerMeter": 55000 },
+    { "name": "Шкафы-купе", "pricePerMeter": 60000 },
+    { "name": "Угловой шкаф-купе", "pricePerMeter": 55000 },
+    { "name": "Угловые шкафы", "pricePerMeter": 50000 },
+    { "name": "Рабочие зоны", "pricePerMeter": 45000 },
+    { "name": "Мебельная стенка", "pricePerMeter": 45000 },
+    { "name": "ТВ зона", "pricePerMeter": 25000 },
+    { "name": "Двери купе", "pricePerUnit": 25000, "unit": "штука" }
+  ]
+}

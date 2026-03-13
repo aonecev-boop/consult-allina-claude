@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude mcp:*)",
+      "Bash(npx -y @modelcontextprotocol/server-fetch --help 2>&1 | head -5)",
+      "Bash(npm search:*)",
+      "WebSearch",
+      "Bash(npx -y @modelcontextprotocol/server-fetch 2>&1 | head -10)",
+      "Bash(npx -y @modelcontextprotocol/server-puppeteer 2>&1 | head -10)",
+      "Bash(npm view:*)",
+      "Bash(cd \"C:/Users/aonec/Desktop/антигравити/promo\" && npm install express dotenv @anthropic-ai/sdk 2>&1)",
+      "Bash(sleep 2 && curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000 && echo \" OK\" && curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/admin && echo \" OK\")",
+      "Bash(sleep 2 && curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "mcp__filesystem__read_text_file",
+      "mcp__filesystem__list_directory",
+      "Bash(cd \"C:/Users/aonec/Desktop/антигравити/promo\" && timeout 5 node server/index.js 2>&1 || true)",
+      "Bash(cd \"C:/Users/aonec/Desktop/антигравити/promo\" && node -e \"\nimport\\('./server/services/dialogue-state.js'\\).then\\(m => {\n  console.log\\('dialogue-state.js: OK'\\);\n  console.log\\('States:', Object.values\\(m.STATES\\)\\);\n  \n  // Тест извлечения данных\n  const msg = 'Привет! Рада помочь! <!--DATA:{\\\\\"Client_name\\\\\":\\\\\"Иван\\\\\",\\\\\"Mebel_name\\\\\":\\\\\"\\\\\"}-->';\n  const data = m.extractClientData\\(msg\\);\n  console.log\\('Extracted:', data\\);\n  console.log\\('Cleaned:', m.cleanMessage\\(msg\\)\\);\n  \n  // Тест состояний\n  const state = m.resolveState\\('collecting_name', { Client_name: 'Иван' }\\);\n  console.log\\('State after name:', state\\);\n}\\).catch\\(e => console.error\\('Error:', e\\)\\);\n\")",
+      "Bash(cd \"C:/Users/aonec/Desktop/антигравити/promo\" && node -e \"\nimport\\('./server/services/chat.js'\\).then\\(m => {\n  console.log\\('chat.js: OK'\\);\n  console.log\\('Exports:', Object.keys\\(m\\)\\);\n}\\).catch\\(e => console.error\\('Error:', e\\)\\);\n\")",
+      "Bash(sleep 3 && curl -s http://localhost:3000/api/databases | head -1)",
+      "Bash(cd \"C:/Users/aonec/Desktop/антигравити/promo\" && npm install multer 2>&1 | tail -3)",
+      "Bash(cd \"C:/Users/aonec/Desktop/антигравити/promo\" && node -e \"\nimport\\('./server/services/stt.js'\\).then\\(\\(\\) => console.log\\('stt.js: OK'\\)\\).catch\\(e => console.error\\('stt.js:', e.message\\)\\);\nimport\\('./server/services/tts.js'\\).then\\(\\(\\) => console.log\\('tts.js: OK'\\)\\).catch\\(e => console.error\\('tts.js:', e.message\\)\\);\n\")",
+      "Bash(cd \"C:/Users/aonec/Desktop/антигравити/promo\" && node -e \"\nimport { calculateByCategory, calculateByModel, parseLengthToMeters, extractModelFromUrl } from './server/services/calculator.js';\n\n// Тест парсинга длины\nconsole.log\\('159 см →', parseLengthToMeters\\('159'\\), 'м'\\);\nconsole.log\\('2400 мм →', parseLengthToMeters\\('2400'\\), 'м'\\);\nconsole.log\\('2.5 м →', parseLengthToMeters\\('2.5'\\), 'м'\\);\n\n// Тест расчёта по категории\nconsole.log\\('\\\\nШкаф-купе 2м:', calculateByCategory\\('Шкафы-купе', 2\\)\\);\n\n// Тест гардеробной П-образной\nconsole.log\\('\\\\nГардеробная П 2×1.5:', calculateByCategory\\('Гардеробные', 2, { shape: 'П', width: 2, depth: 1.5 }\\)\\);\n\n// Тест по модели\nconsole.log\\('\\\\nМодель №23 2.5м:', calculateByModel\\(23, 2.5\\)\\);\n\n// Тест извлечения модели из URL\nconsole.log\\('\\\\nURL:', extractModelFromUrl\\('uglovoi-shkaf-s-zerkalom-23'\\)\\);\n\")",
+      "Bash(cd \"C:/Users/aonec/Desktop/антигравити/promo\" && node -e \"\nimport\\('./server/services/chat.js'\\).then\\(m => {\n  console.log\\('chat.js: OK, exports:', Object.keys\\(m\\)\\);\n}\\).catch\\(e => console.error\\('Error:', e\\)\\);\nimport\\('./server/services/calculator.js'\\).then\\(m => {\n  console.log\\('calculator.js: OK, exports:', Object.keys\\(m\\)\\);\n}\\).catch\\(e => console.error\\('Error:', e\\)\\);\nimport\\('./server/services/telegram.js'\\).then\\(m => {\n  console.log\\('telegram.js: OK, exports:', Object.keys\\(m\\)\\);\n}\\).catch\\(e => console.error\\('Error:', e\\)\\);\n\")",
+      "Bash(netstat -ano)",
+      "Bash(taskkill //F //PID 11676 2>&1)",
+      "Bash(sleep 2 && curl -s http://localhost:3000/api/databases | head -1)",
+      "Bash(sleep 2 && curl -s http://localhost:3000/ | head -3)",
+      "Bash(cd \"C:/Users/aonec/Desktop/антигравити/promo\" && npm run dev)",
+      "Bash(sleep 3 && curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(git init:*)"
+    ]
+  }
+}
